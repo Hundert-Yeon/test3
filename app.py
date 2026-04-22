@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 
 st.set_page_config(
-    page_title="AI 지역분석시스템 | 연효성",
+    page_title="AI 지역분석시스템 | 연효성", #
     page_icon="📊",
     layout="wide",
     initial_sidebar_state="expanded",
