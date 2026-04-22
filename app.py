@@ -433,10 +433,18 @@ def sec_header(num, title):
 # ── 사이드바 ──────────────────────────────────────────────────────────────────
 with st.sidebar:
     st.markdown(
-        '<div style="padding:14px 0 10px">'
-        '<div style="font-size:17px;font-weight:700;color:#fff">📊 AI 지역분석</div>'
-        '<div style="font-size:11px;color:rgba(255,255,255,.4);margin-top:3px">영업기획팀 · 2026.04</div>'
-        "</div>",
+        '<div style="padding:16px 0 12px;text-align:center">'
+        '<svg width="176" height="64" viewBox="0 0 176 64" xmlns="http://www.w3.org/2000/svg">'
+        '<rect width="176" height="64" rx="10" fill="#1a4a8a"/>'
+        '<rect x="12" y="32" width="7" height="20" rx="2" fill="rgba(255,255,255,0.35)"/>'
+        '<rect x="22" y="22" width="7" height="30" rx="2" fill="rgba(255,255,255,0.6)"/>'
+        '<rect x="32" y="14" width="7" height="38" rx="2" fill="#ffffff"/>'
+        '<line x1="12" y1="52" x2="42" y2="52" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>'
+        '<text x="52" y="26" font-family="Noto Sans KR,sans-serif" font-size="18" font-weight="700" fill="#ffffff">연효성</text>'
+        '<text x="52" y="43" font-family="Noto Sans KR,sans-serif" font-size="10" fill="rgba(255,255,255,0.55)">AI 지역분석시스템</text>'
+        '<text x="52" y="56" font-family="Noto Sans KR,sans-serif" font-size="9" fill="rgba(255,255,255,0.35)">영업기획팀 · 2026.04</text>'
+        '</svg>'
+        '</div>',
         unsafe_allow_html=True,
     )
     st.markdown("---")
@@ -467,7 +475,19 @@ with st.sidebar:
 if "기획서" in page:
     st.markdown(
         '<div class="cover">'
-        "<h1>AI 지역 거시환경 자동 분석 시스템 구축</h1>"
+        '<div style="display:flex;align-items:center;gap:14px;margin-bottom:18px">'
+        '<svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">'
+        '<rect width="48" height="48" rx="10" fill="rgba(255,255,255,0.12)"/>'
+        '<rect x="8" y="28" width="5" height="13" rx="1.5" fill="rgba(255,255,255,0.4)"/>'
+        '<rect x="16" y="20" width="5" height="21" rx="1.5" fill="rgba(255,255,255,0.65)"/>'
+        '<rect x="24" y="12" width="5" height="29" rx="1.5" fill="#ffffff"/>'
+        '<line x1="8" y1="41" x2="32" y2="41" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>'
+        '</svg>'
+        '<div>'
+        '<div style="font-size:12px;font-weight:700;color:rgba(255,255,255,0.5);letter-spacing:.12em;text-transform:uppercase;margin-bottom:2px">연효성 · AI 지역분석</div>'
+        '<div style="font-size:26px;font-weight:700;color:#fff;line-height:1.2">AI 지역 거시환경 자동 분석 시스템 구축</div>'
+        '</div>'
+        '</div>'
         "<p>Regional Intelligence Dashboard — 영업기획팀 효율화 프로젝트</p>"
         '<div class="cmeta">'
         '<div><div class="cml">제안팀</div><div class="cmv">영업기획팀</div></div>'
